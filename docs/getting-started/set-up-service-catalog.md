@@ -39,13 +39,13 @@ Two other default blueprints are designed to help you manage users, teams, and o
 1. [`_user`](/getting-started/default-components#-user)
 2. [`_team`](/getting-started/default-components#-team)
 
-To manually onboard users and teams, go to the relvant page in the [Organization catalog](https://app.getport.io/users), and click on the `+` button in the top right corner (for example, `+ User` in the `Users` page).
+To manually onboard users and teams, go to the relvant page in the [Organization catalog](https://app.getport.io/_users), and click on the `+` button in the top right corner (for example, `+ User` in the `Users` page).
 
 This will create entities, with rich context from the tools you've integrated.  
 
 #### Register your user
 
-First, in the [users](https://app.getport.io/users) page, choose `Register your user`.  
+First, in the [users](https://app.getport.io/_users) page, choose `Register your user`.  
 This will create a `user` entity with context of your user accounts in other tools you've integrated.  
 
 Now that you've registered your user, some components in your portal will be populated with data.  
@@ -55,7 +55,7 @@ This table should now be populated with PRs from your Git provider.
 
 #### Register teams
 
-In the [teams](https://app.getport.io/teams) page, choose `Register a new team` and select your user as a member.  
+In the [teams](https://app.getport.io/_teams) page, choose `Register a new team` and select your user as a member.  
 This will create a `team` entity and add your user to it.  
 Now that your user is a member of a team, widgets in the [My team](https://app.getport.io/my_team) page will be populated with data.
 
