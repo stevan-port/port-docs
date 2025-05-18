@@ -80,16 +80,16 @@ Choose one of the following installation methods:
 
 <Tabs groupId="installation-methods" queryString="installation-methods">
 
+<TabItem value="hosted-by-port" label="Hosted by Port" default>
+
+<OceanSaasInstallation integration="GitLab_v2" />
+
+</TabItem>
+
 <TabItem value="real-time-self-hosted" label="Real-time (self-hosted)">
 
+Using this installation option means that the integration will be able to update Port in real time using webhooks.
 
-<OceanSaasLiveEventsDescription id="GitLab_v2"/>
-<div>
-<details>
-<summary><b>Supported live event triggers</b></summary>
-<OceanSaasLiveEventsTriggersManual id="GitLab_v2" isOAuth={false} />
-</details>
-</div>
 <h2>Prerequisites</h2>
 
 <Prerequisites />
@@ -204,7 +204,7 @@ This table summarizes the available parameters for the installation.
 | `scheduledResyncInterval`        | The number of minutes between each resync                                                                                           | ❌        |
 | `initializePortResources`        | Default true, When set to true the integration will create default blueprints and the port App config Mapping                       | ❌        |
 | `sendRawDataExamples`            | Enable sending raw data examples from the third party API to port for testing and managing the integration mapping. Default is true | ❌        |
-| `baseUrl`                        | The base url of the GitLab integration instance, used for real-time updates.                                                     | ❌        |
+| `baseUrl`                        | The base url of the instance where the GitLab integration is hosted, used for real-time updates. (e.g.`https://mygitlaboceanintegration.com`)                 | ❌        |
 
 <br/>
 

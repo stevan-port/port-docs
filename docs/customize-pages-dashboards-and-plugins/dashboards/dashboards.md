@@ -348,6 +348,11 @@ You can create an iframe widget to display an embedded url in the dashboard. The
 
 The entity identifier will be concatenated under the `entity` query param and the blueprint identifier will be concatenated under the `blueprint` query param. For example: `https://some-iframe-url.com?entity=entity_identifier&blueprint=blueprint_identifier`.
 
+:::info Embedded Dashboard Access
+Note that the iframe request is made directly from the end user’s browser, not from Port’s backend.  
+If you are implementing IP whitelisting at the network or firewall level, you will need to account for the IP addresses of the users accessing the embedded dashboard - not the IP of Port itself.
+:::
+
 ![iFrame](/img/software-catalog/widgets/iframeWidget.png)
 
 #### Widget properties
@@ -397,6 +402,22 @@ This widget displays information about a specific entity, including its properti
 Simply choose a blueprint and a specific entity, and the widget will display information similar to that found on the entity's page.
 
 <img src='/img/software-catalog/widgets/entityInformationExample.png' width='100%' border='1px' />
+
+### Links
+
+This widget allows you to display a list of links, both internal and external, for quick access to useful pages.
+
+<img src='/img/software-catalog/widgets/linksExample.png' width='50%' border='1px' />
+
+- **External links** - links to external websites, such as documentation, 3rd party tools, etc.  
+  These links will open in a new tab when clicked.  
+  For example: "https://www.google.com".
+
+- **Internal links** - links to internal pages in your portal, such as an entity page, a catalog page, an entity's audit log page, etc.  
+  These links will open in the same tab when clicked.  
+  For example: "https://app.getport.io/serviceEntity?identifier=frontend".
+
+During creation/editing of the widget, you can sort the links by dragging and dropping them.
 
 ## Chart filters
 
