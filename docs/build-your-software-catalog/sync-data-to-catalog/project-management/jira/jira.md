@@ -442,7 +442,7 @@ resources:
     selector:
       query: "true" # JQ boolean expression. If evaluated to false - this object will be skipped.
       # highlight-next-line
-      jql: "status != Done" # JQL query, will only ingest issues whose status is not "Done"
+      jql: status != Done # JQL query, will only ingest issues whose status is not "Done"
     port:
 ```
 
